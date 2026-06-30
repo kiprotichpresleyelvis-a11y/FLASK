@@ -33,10 +33,10 @@ def signup () :
 
     # connection to database
     connection = pymysql.connect(
-        host="localhost" ,
-        user ="root" ,
-        password="" ,
-        database="modcomelvis") 
+        host="mysql-presley003.alwaysdata.net" ,
+        user ="presley003" ,
+        password="modcom2026" ,
+        database="presley003_sokogargen") 
     
     # define the cursor 
     cursor = connection.cursor() 
@@ -68,10 +68,10 @@ def signin() :
 
     # connection to database
     connection = pymysql.connect(
-        host="localhost" ,
-        user ="root" ,
-        password="" ,
-        database="modcomelvis"
+        host="mysql-presley003.alwaysdata.net" ,
+        user ="presley003" ,
+        password="modcom2026" ,
+        database="presley003_sokogargen"
     ) 
     
     # define the cursor 
@@ -114,10 +114,10 @@ def products () :
 
     # connection to database
     connection = pymysql.connect(
-        host="localhost" ,
-        user ="root" ,
-        password="" ,
-        database="modcomelvis"
+        host="mysql-presley003.alwaysdata.net" ,
+        user ="presley003" ,
+        password="modcom2026" ,
+        database="presley003_sokogargen"
     )  
 
     # define the cursor why is it not advisable to save images in mysql database
@@ -149,10 +149,10 @@ def getproducts():
 
 #3. connection to database 
     connection = pymysql.connect(
-        host="localhost" ,
-        user ="root" ,
-        password="" ,
-        database="modcomelvis"
+        host="mysql-presley003.alwaysdata.net" ,
+        user ="presley003" ,
+        password="modcom2026" ,
+        database="presley003_sokogargen"
     )  
 
     # 4. define the cursor
