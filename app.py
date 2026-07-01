@@ -36,7 +36,7 @@ def signup () :
         host="mysql-presley003.alwaysdata.net" ,
         user ="presley003" ,
         password="modcom2026" ,
-        database="presley003_sokogargen") 
+        database="presley003_sokogarden") 
     
     # define the cursor 
     cursor = connection.cursor() 
@@ -71,7 +71,7 @@ def signin() :
         host="mysql-presley003.alwaysdata.net" ,
         user ="presley003" ,
         password="modcom2026" ,
-        database="presley003_sokogargen"
+        database="presley003_sokogarden"
     ) 
     
     # define the cursor 
@@ -117,7 +117,7 @@ def products () :
         host="mysql-presley003.alwaysdata.net" ,
         user ="presley003" ,
         password="modcom2026" ,
-        database="presley003_sokogargen"
+        database="presley003_sokogarden"
     )  
 
     # define the cursor why is it not advisable to save images in mysql database
@@ -152,7 +152,7 @@ def getproducts():
         host="mysql-presley003.alwaysdata.net" ,
         user ="presley003" ,
         password="modcom2026" ,
-        database="presley003_sokogargen"
+        database="presley003_sokogarden"
     )  
 
     # 4. define the cursor
@@ -173,7 +173,7 @@ def getproducts():
 
 
 # MPESA INTEGRETION
-     # Mpesa Payment Route 
+# Mpesa Payment Route 
 import requests
 import datetime
 import base64
@@ -236,7 +236,6 @@ def mpesa_payment():
             # Create a POST Request to above url, providing headers, payload 
             # Below triggers an STK Push to the phone number indicated in the payload and the amount.
             response = requests.post(url, json=payload, headers=headers)
-            print(response.text) # 
             # Give a Response
             return jsonify({"message": "An MPESA Prompt has been sent to Your Phone, Please Check & Complete Payment"})
 
@@ -244,6 +243,8 @@ def mpesa_payment():
 
 
 
+
+            print(response.text) # 
 
 
 
